@@ -4,6 +4,9 @@
 #include<stdlib.h>
 
 
+/*********************************************************/
+/*            Declaraciones de las funciones             */
+/*********************************************************/
 
 /* Funciones de test */
 void testVolverMayuscula(void);
@@ -17,19 +20,33 @@ void volverMayuscula(char *ch);
 void stringToMayuscula(char *s);
 
 
+/*********************************************************/
+/*                     Funcion main                      */
+/*********************************************************/
+
 
 int main(void) {
 
-    printf("%s", "Test es letra \n");
-    testEsLetra();
-    printf("%s", "\nTest volver Mayuscula \n");
-    testVolverMayuscula();
-    printf("%s", "\nTest String to Mayuscula \n");
-    testStringToMayuscula();
-    return 0;
+  runProgram();
+  //testVolverMayuscula();
+  //testEsLetra();
+  //testStringToMayuscula();
+  return 0;
 }
 
+/*********************************************************/
+/*            Declaraciones de las funciones             */
+/*********************************************************/
 
+/* Funciones de test */
+
+void runProgram(){
+  char s[256];
+  printf("%s", "Ingrese entrada: ");
+  scanf("%s",s);
+  stringToMayuscula(s);
+  printf("%s \n",s);
+}
 
 /**  
  *   @brief  Funcion para testear volverMayuscula
@@ -54,7 +71,7 @@ void testVolverMayuscula(void) {
  *   @return void
  */
 void testEsLetra(void) {
-  char c1 = 'y', c2 = '/';
+  char c1 = '!', c2 = 's';
   printf("%c -> %d\n", c1, esLetra(c1));
   printf("%c -> %d\n", c2, esLetra(c2));
 }
@@ -73,16 +90,11 @@ void testStringToMayuscula(void) {
 }
 
 
-/* Funciones de test */
+/*********************************************************/
+/*             Definiciones de las funciones             */
+/*********************************************************/
 
-void runProgram(){
-  char s[256];
-  printf("%s", "Ingrese entrada: ");
-  scanf("%s",s);
-
-  //stringToMayuscula(s);
-  printf("%s \n",s);
-}
+/* Funciones del programa */
 
 /**  
  *   @brief  Determina si un caracter alfabetico
@@ -109,11 +121,13 @@ int esLetra(char ch) {
  *   @return void
  */
 void volverMayuscula(char *ch) {
-  
+  // Coloque el codigo solucion a continuacion...
+    //printf("%c",ch);
     *ch = *ch - 32;
-  
+    printf("%c%s\n",*ch, " probando");
    
 }
+
 
 /**  
  *   @brief  Convierte en mayusculas la cadena de caracteres ingresada.
@@ -130,12 +144,10 @@ void stringToMayuscula(char *s) {
    
     int isLetter = esLetra(car);
     if (isLetter == 1){
-        
-        volverMayuscula(&car);
+      volverMayuscula(&car);
     }  
 
   }
 
 
 }
-

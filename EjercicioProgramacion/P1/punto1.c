@@ -41,5 +41,5 @@ int contarCaracter(char *array, char ch) {
     }
 
     return cont;
-  
+   
 }
