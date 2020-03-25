@@ -6,7 +6,7 @@
  {
    char str[1000];
    int ch, n = 0;
-   while ((ch = getchar()) != EOF && n < 1000) {
+   while ((ch = getchar()) != EOF && n < 10) {
       str[n] = ch;
       ++n;
    }   
