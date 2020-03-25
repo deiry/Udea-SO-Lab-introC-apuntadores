@@ -1,0 +1,10 @@
+¿Que hace el programa anterior?
+Capturar de uno en uno los caracteres que se van a ingresando por consola,
+hasta cuando que haya un fin del línea o se haya superado los 1000 carácteres
+
+Describa las funciones getchar y putchar:
+getchar() -> Obtiene un caracter
+putchar() -> Escribe en pantalla
+
+¿Cuales son las condiciones necesarias para que el primer ciclo deje de ejecutarse?
+Fin de linea o 1000 carácteres.
