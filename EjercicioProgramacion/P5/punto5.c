@@ -19,13 +19,13 @@ void stringToMayuscula(char *s);
 
 
 int main(void) {
-
-    printf("%s", "Test es letra \n");
+    runProgram();
+    /*printf("%s", "Test es letra \n");
     testEsLetra();
     printf("%s", "\nTest volver Mayuscula \n");
     testVolverMayuscula();
     printf("%s", "\nTest String to Mayuscula \n");
-    testStringToMayuscula();
+    testStringToMayuscula();*/
     return 0;
 }
 
@@ -76,12 +76,14 @@ void testStringToMayuscula(void) {
 /* Funciones de test */
 
 void runProgram(){
+  while(1){  
   char s[256];
   printf("%s", "Ingrese entrada: ");
   scanf("%s",s);
 
-  //stringToMayuscula(s);
-  printf("%s \n",s);
+  stringToMayuscula(s);
+  printf("%s \n",s);}
+
 }
 
 /**  
@@ -111,7 +113,6 @@ int esLetra(char ch) {
 void volverMayuscula(char *ch) {
   
     *ch = *ch - 32;
-  
    
 }
 
@@ -131,7 +132,7 @@ void stringToMayuscula(char *s) {
     int isLetter = esLetra(car);
     if (isLetter == 1){
         
-        volverMayuscula(&car);
+        volverMayuscula(s+i);
     }  
 
   }
