@@ -1,10 +1,7 @@
 # Laboratorio de vectores y apuntadores
 
-> **Objetivos**
-> * Introducir el concepto de apuntador, su uso e importancia en la realizacion de programas en C.
-> * Comprender la relación que se establece entre apuntadores, variables y memoria.
-> * Entender el uso de vectores en C.
-> * Relacionar y aplicar los conceptos: vectores, apuntadores y funciones para el desarrollo de problemas de programacion.
+Si se desea ver los resultados de las pruebas se encuentra en la carpeta de EjercicioProgramación y se muestra el código de cada los 7 puntos terminados, además en la carpeta Prubas está la evidencia de los 7 puntos diferentes mostrados a continuación:
+
 
 ## 5. Ejercicios de programación.
 
