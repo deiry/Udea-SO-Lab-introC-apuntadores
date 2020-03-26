@@ -1,5 +1,5 @@
 # Laboratorio de vectores y apuntadores
-
+Realizado por Sofía Navas y Estefany Muriel.
 Si se desea ver los resultados de las pruebas se encuentra en la carpeta de EjercicioProgramación y se muestra el código de cada los 7 puntos terminados, además en la carpeta Prubas está la evidencia de los 7 puntos diferentes mostrados a continuación:
 
 
